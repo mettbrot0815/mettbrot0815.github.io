@@ -443,6 +443,7 @@ footer{
       <span class="feat-ico">🔬</span>
       <div class="feat-name">Hardware detection</div>
       <div class="feat-desc">Reads VRAM from sysfs (AMD) and nvidia-smi (NVIDIA) without pre-installed drivers. Computes exact GPU/CPU layer split and optimal thread/batch settings for your machine.</div>
+<<<<<<< Updated upstream
     </div>
     <div class="feat">
       <div class="feat-step">Step 3</div>
@@ -467,3 +468,184 @@ footer{
       <span class="feat-ico">🤖</span>
       <div class="feat-name">Autonomous coworking</div>
       <div class="feat-desc"><strong style="color:#f0f2f6">cowork</strong> (Open Interpreter) lets the LLM execute code, browse the web, and manage files autonomously. <strong style="color:#f0f2f6">aider</strong> gives git-integrated pair programming — reads your codebase
+=======
+    </div>
+    <div class="feat">
+      <div class="feat-step">Step 3</div>
+      <span class="feat-ico">🎯</span>
+      <div class="feat-name">Auto model selection</div>
+      <div class="feat-desc">Eight GPU tiers and three CPU-only tiers. The script selects the largest model that fits your VRAM. Override anytime with a numbered picker showing all 15 models and their requirements.</div>
+    </div>
+    <div class="feat">
+      <div class="feat-step">Steps 7–9</div>
+      <span class="feat-ico">⚡</span>
+      <div class="feat-name">GPU acceleration</div>
+      <div class="feat-desc">CUDA 12 toolkit for NVIDIA. ROCm via <code class="mono" style="font-size:.8em">amdgpu-install</code> for AMD, with HIP wheel fallback and GGML_HIPBLAS source build. Flash attention + q8_0 KV-cache on by default.</div>
+    </div>
+    <div class="feat">
+      <div class="feat-step">Step 13</div>
+      <span class="feat-ico">🖥️</span>
+      <div class="feat-name">Two chat interfaces</div>
+      <div class="feat-desc"><strong style="color:#f0f2f6">Neural Terminal</strong> — zero-dependency HTML UI, Markdown + syntax highlighting, multi-session sidebar. <strong style="color:#f0f2f6">Open WebUI</strong> — full-featured interface with model switching and history. Both fully local.</div>
+    </div>
+    <div class="feat">
+      <div class="feat-step">Step 13b</div>
+      <span class="feat-ico">🤖</span>
+      <div class="feat-name">Autonomous coworking</div>
+      <div class="feat-desc"><strong style="color:#f0f2f6">cowork</strong> (Open Interpreter) lets the LLM execute code, browse the web, and manage files autonomously. <strong style="color:#f0f2f6">aider</strong> gives git-integrated pair programming — reads your codebase, writes patches, applies them.</div>
+    </div>
+    <div class="feat">
+      <div class="feat-step">Step 13a</div>
+      <span class="feat-ico">🛠️</span>
+      <div class="feat-name">Quality-of-life tools</div>
+      <div class="feat-desc">Optional installs: zsh + Oh-My-Zsh, tmux, bat, eza, fzf, btop, nvtop (NVIDIA + AMD + Intel), neofetch, GUI file tools. All aliased and sourced on first terminal open — no manual setup.</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- MODELS -->
+<div class="section-wrap alt">
+<div class="section" id="models">
+  <div class="s-num reveal">02 &nbsp; Model library</div>
+  <h2 class="s-title reveal">15 curated models.<br>No token required.</h2>
+  <p class="s-sub reveal">All from <a href="https://huggingface.co/bartowski" target="_blank">bartowski's public GGUF repos</a>. The installer picks the best tier for your hardware automatically — or you choose from the full list.</p>
+
+  <div class="reveal">
+    <div class="models-wrap">
+      <div class="model-tier-head"><span style="color:var(--amber)">★</span> Best 24 GB VRAM <span class="tline"></span></div>
+      <div class="models-grid" style="grid-template-columns:1fr">
+        <div class="model">
+          <div class="m-top"><span class="m-name">Qwen2.5-32B-Instruct</span><span class="m-q">Q4_K_M · 64 layers</span></div>
+          <span class="m-vram">~19 GB VRAM</span>
+          <div class="m-caps"><span class="cap s">★ Auto-selected</span><span class="cap t">TOOLS</span></div>
+        </div>
+      </div>
+
+      <div class="model-tier-head">16 GB VRAM <span class="tline"></span></div>
+      <div class="models-grid" style="grid-template-columns:1fr">
+        <div class="model">
+          <div class="m-top"><span class="m-name">Qwen3-30B-A3B (MoE)</span><span class="m-q">Q4_K_M · 48 layers</span></div>
+          <span class="m-vram">~16 GB VRAM &nbsp;·&nbsp; 30B quality at 8B speed</span>
+          <div class="m-caps"><span class="cap s">★ Auto-selected</span><span class="cap t">TOOLS</span><span class="cap k">THINK</span></div>
+        </div>
+      </div>
+
+      <!-- ... the rest of your models section remains unchanged ... -->
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- TOOLS -->
+<div class="section-wrap">
+<div class="section" id="tools">
+  <!-- ... your original tools content remains unchanged ... -->
+</div>
+</div>
+
+<!-- QUICK START -->
+<div class="section-wrap alt">
+<div class="section" id="start">
+  <!-- ... your original quick start content remains unchanged ... -->
+</div>
+</div>
+
+<footer>
+  <div class="foot-l"><strong>llm-auto-setup</strong> &nbsp;·&nbsp; MIT License &nbsp;·&nbsp; Ubuntu 22.04 / 24.04</div>
+  <div class="foot-links">
+    <a href="https://github.com/mettbrot0815/llm-auto-setup" target="_blank">GitHub</a>
+    <a href="https://github.com/mettbrot0815/llm-auto-setup/issues" target="_blank">Issues</a>
+    <a href="https://github.com/mettbrot0815/llm-auto-setup/blob/main/llm-auto-setup.sh" target="_blank">View script</a>
+    <a href="https://ollama.com" target="_blank">Ollama</a>
+    <a href="https://huggingface.co/bartowski" target="_blank">Models</a>
+  </div>
+</footer>
+
+<script>
+// Copy button
+function doCopy(){
+  const t='bash <(curl -fsSL https://raw.githubusercontent.com/mettbrot0815/llm-auto-setup/main/llm-auto-setup.sh)';
+  navigator.clipboard.writeText(t).then(()=>{
+    const b=document.getElementById('cpyBtn');
+    b.textContent='COPIED ✓';b.classList.add('ok');
+    setTimeout(()=>{b.textContent='COPY';b.classList.remove('ok')},2200);
+  });
+}
+
+// Scroll reveal
+const obs=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const kids=[...e.target.querySelectorAll('.feat,.model,.tool,.step,.cmd-row,.req-list')];
+    kids.forEach((c,i)=>{
+      c.style.cssText=`opacity:0;transform:translateY(10px);transition:opacity .38s ${i*.04}s,transform .38s ${i*.04}s`;
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{c.style.opacity='1';c.style.transform='none'}));
+    });
+    e.target.classList.add('in');
+    obs.unobserve(e.target);
+  });
+},{threshold:.06});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Terminal animation
+const LINES=[
+  {t:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',c:'tdim',i:true},
+  {t:'  ▶  Hardware detection',c:'tc',i:true},
+  {t:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',c:'tdim',i:true},
+  {t:''},
+  {t:'  ┌───────────────────────────────────────┐',c:'tc'},
+  {t:'  │      HARDWARE SCAN RESULTS           │',c:'tc'},
+  {t:'  ├───────────────────────────────────────┤',c:'tc'},
+  {t:'  │  CPU     AMD Ryzen 9 5900X           │',c:'tw'},
+  {t:'  │  SIMD    AVX2 AVX                    │',c:'tw'},
+  {t:'  │  RAM     64 GB total / 58 GB free    │',c:'tw'},
+  {t:'  │  GPU     AMD Radeon RX 7900 XTX      │',c:'tw'},
+  {t:'  │  VRAM    24 GB  (24564 MiB)          │',c:'tw'},
+  {t:'  │  API     ROCm (not yet installed)    │',c:'ta'},
+  {t:'  │  Disk    240 GB free                 │',c:'tw'},
+  {t:'  └───────────────────────────────────────┘',c:'tc'},
+  {t:''},
+  {t:'  ◆  24 GB VRAM → Qwen2.5-32B [TOOLS] ★',c:'ta'},
+  {t:''},
+  {t:'  ╔═════════════════════════════════════╗',c:'tg'},
+  {t:'  ║    RECOMMENDED CONFIGURATION       ║',c:'tg'},
+  {t:'  ╠═════════════════════════════════════╣',c:'tg'},
+  {t:'  ║  Model       Qwen2.5-32B Q4_K_M   ║',c:'tw'},
+  {t:'  ║  Caps        TOOLS                 ║',c:'tw'},
+  {t:'  ║  GPU layers  64 / 64 (~18 GB)      ║',c:'tw'},
+  {t:'  ║  Threads     12   Batch: 1024      ║',c:'tw'},
+  {t:'  ╚═════════════════════════════════════╝',c:'tg'},
+  {t:''},
+  {t:'  Proceed with this configuration? (y/N) ',c:'ta'},
+];
+
+const tbody=document.getElementById('tbody');
+let li=0;
+function nextLine(){
+  if(li>=LINES.length)return;
+  const L=LINES[li++];
+  const s=document.createElement('span');
+  s.style.display='block';
+  if(!L.t){s.innerHTML='&nbsp;';tbody.appendChild(s);setTimeout(nextLine,55);return}
+  if(L.c)s.className=L.c;
+  if(L.i){s.textContent=L.t;tbody.appendChild(s);setTimeout(nextLine,16);return}
+  tbody.appendChild(s);
+  let ci=0;
+  const cur=document.createElement('span');
+  cur.className='tcur';s.appendChild(cur);
+  (function type(){
+    if(ci<L.t.length){
+      cur.before(document.createTextNode(L.t[ci++]));
+      setTimeout(type,10+Math.random()*8);
+    }else{
+      if(li<LINES.length){cur.remove();}
+      setTimeout(nextLine,35);
+    }
+  })();
+}
+setTimeout(nextLine,700);
+</script>
+</body>
+</html>
+>>>>>>> Stashed changes
